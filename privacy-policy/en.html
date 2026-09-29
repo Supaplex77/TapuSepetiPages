@@ -35,7 +35,7 @@
     <p>At Tapu Sepeti ("the App") we care about your privacy. This policy explains plainly what information is processed and where when you use the App.</p>
 
     <div class="highlight">
-        <p><strong>In short:</strong> the App needs no account and <strong>collects no personal data</strong>. Your saved deeds are stored only on your device. There are no ads, analytics or tracking tools.</p>
+        <p><strong>In short:</strong> the App needs no account and <strong>collects nothing that identifies you</strong>, such as your name, e-mail or location. Your saved deeds are stored only on your device. Google Firebase is used only for <strong>crash reports</strong>, so we can fix bugs, and for app settings. There are no ads, usage analytics or tracking tools.</p>
     </div>
 
     <h2>1. Data Stored on Your Device</h2>
@@ -55,7 +55,15 @@
     </ul>
     <p>These services are subject to their own privacy policies. The App's developer does not see these requests and stores no data on any server.</p>
 
-    <h2>3. Permissions</h2>
+    <h2>3. Crash Reports and App Settings (Google Firebase)</h2>
+    <p>The App uses only these two Google Firebase services:</p>
+    <ul>
+        <li><strong>Firebase Crashlytics:</strong> if the App crashes, a crash report is sent so we can find and fix the bug. It contains the technical details of the error, the device model, the iOS and app versions, the device state at the time of the crash (e.g. free memory, orientation) and a randomly generated installation identifier. Your name, location, saved deeds and the parcels you look up are not included. Crash reports are kept in Firebase for 90 days.</li>
+        <li><strong>Firebase Remote Config:</strong> when it starts, the App reads a few settings from Firebase (for example a required update or a maintenance notice). This request sends the app version, the iOS version, the device language and region, and a randomly generated Firebase installation identifier.</li>
+    </ul>
+    <p>Installation identifiers are specific to this installation of the App and do not identify you personally; they are not combined with other companies' data or used for advertising. Firebase Analytics is not used. This data may be processed by Google on servers outside Türkiye, including in the United States; see <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a> for details.</p>
+
+    <h2>4. Permissions</h2>
     <ul>
         <li><strong>Location (while using the App):</strong> to show where you are on the map and to measure the distance and direction to your parcel. Your location is sent to TKGM only when you look up the parcel at your own position.</li>
         <li><strong>Camera:</strong> only to show your parcel's corner points in augmented reality (AR). Nothing is recorded or sent anywhere.</li>
@@ -63,25 +71,25 @@
     </ul>
     <p>You can change these permissions at any time in iOS Settings &gt; Tapu Sepeti.</p>
 
-    <h2>4. Ads, Analytics and Tracking</h2>
-    <p>The App <strong>shows no ads</strong>, collects no usage statistics or crash reports, and <strong>does not track you</strong> across apps or websites owned by other companies.</p>
+    <h2>5. Ads, Analytics and Tracking</h2>
+    <p>The App <strong>shows no ads</strong>, collects no usage statistics (analytics) and <strong>does not track you</strong> across apps or websites owned by other companies. The only diagnostic data collected are the crash reports described in section 3.</p>
 
-    <h2>5. Deleting Your Data</h2>
-    <p>You can delete a saved deed from its parcel detail screen. Deleting the App from your device removes all local data, including the cache.</p>
+    <h2>6. Deleting Your Data</h2>
+    <p>You can delete a saved deed from its parcel detail screen. Deleting the App from your device removes all local data, including the cache. Crash reports are deleted from Firebase automatically after 90 days.</p>
 
-    <h2>6. Children's Privacy</h2>
-    <p>The App is intended for a general audience. As it collects no personal data from anyone, it collects none from children either.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>The App is intended for a general audience. It collects no personal data that identifies anyone, including children; only the technical crash and settings data described in section 3 is processed.</p>
 
-    <h2>7. Your Rights (KVKK / GDPR)</h2>
-    <p>Your rights under Türkiye's Personal Data Protection Law No. 6698 (KVKK) and the EU General Data Protection Regulation (GDPR) are reserved. Since the developer holds no personal data about you, you stay in full control of your data; for any questions you can reach us at the address below.</p>
+    <h2>8. Your Rights (KVKK / GDPR)</h2>
+    <p>Your rights under Türkiye's Personal Data Protection Law No. 6698 (KVKK) and the EU General Data Protection Regulation (GDPR) are reserved. The developer holds no data that identifies you, such as your name or contact details; the technical data processed in Firebase is described in section 3. For questions and requests you can reach us at the address below.</p>
 
-    <h2>8. Important Note</h2>
+    <h2>9. Important Note</h2>
     <p>Tapu Sepeti shows public parcel-query data from TKGM and is not affiliated with TKGM or any government agency. Information is for reference only.</p>
 
-    <h2>9. Changes</h2>
+    <h2>10. Changes</h2>
     <p>We may update this policy from time to time. The current version is always published on this page.</p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>For questions: <a href="mailto:fedartech+tapusepeti@gmail.com">fedartech+tapusepeti@gmail.com</a></p>
 
     <footer><a href="../marketing/en.html">Tapu Sepeti</a> · <a href="../support/en.html">Support</a></footer>

@@ -35,7 +35,7 @@
     <p>Tapu Sepeti ("Uygulama") olarak gizliliğinize önem veriyoruz. Bu politika, Uygulamayı kullandığınızda hangi bilgilerin nerede işlendiğini açıkça anlatır.</p>
 
     <div class="highlight">
-        <p><strong>Kısaca:</strong> Uygulama hesap istemez ve <strong>hiçbir kişisel veri toplamaz</strong>. Kayıtlı tapularınız yalnızca cihazınızda saklanır. Reklam, analiz veya takip aracı yoktur.</p>
+        <p><strong>Kısaca:</strong> Uygulama hesap istemez; adınız, e-postanız veya konumunuz gibi <strong>sizi tanımlayan bilgiler toplanmaz</strong>. Kayıtlı tapularınız yalnızca cihazınızda saklanır. Hataları düzeltebilmek için yalnızca <strong>çökme raporları</strong> ve uygulama ayarları için Google Firebase kullanılır. Reklam, kullanım analizi veya takip aracı yoktur.</p>
     </div>
 
     <h2>1. Cihazınızda Saklanan Veriler</h2>
@@ -55,7 +55,15 @@
     </ul>
     <p>Bu hizmetler kendi gizlilik politikalarına tabidir. Uygulamanın geliştiricisi bu istekleri görmez ve kendi sunucusunda hiçbir veri saklamaz.</p>
 
-    <h2>3. İzinler</h2>
+    <h2>3. Çökme Raporları ve Uygulama Ayarları (Google Firebase)</h2>
+    <p>Uygulama, Google'ın Firebase hizmetlerinden yalnızca şu ikisini kullanır:</p>
+    <ul>
+        <li><strong>Firebase Crashlytics:</strong> Uygulama çökerse, hatayı bulup düzeltebilmemiz için bir çökme raporu gönderilir. Rapor; hatanın teknik ayrıntılarını, cihaz modelini, iOS ve uygulama sürümünü, çökme anındaki cihaz durumunu (ör. boş bellek, ekran yönü) ve rastgele üretilmiş bir kurulum kimliğini içerir. Adınız, konumunuz, kayıtlı tapularınız veya sorguladığınız parseller rapora eklenmez. Çökme raporları Firebase'de 90 gün saklanır.</li>
+        <li><strong>Firebase Remote Config:</strong> Uygulama, açılırken bazı ayarları (örneğin zorunlu güncelleme veya bakım bildirimi) Firebase'den okur. Bu istekte uygulama sürümü, iOS sürümü, cihaz dili ve bölgesi ile rastgele üretilmiş bir Firebase kurulum kimliği gönderilir.</li>
+    </ul>
+    <p>Kurulum kimlikleri yalnızca bu uygulama kurulumuna özgüdür ve sizi kişisel olarak tanımlamaz; başka şirketlerin verileriyle birleştirilmez ve reklam için kullanılmaz. Firebase Analytics kullanılmaz. Bu veriler Google tarafından yurt dışındaki (ABD dahil) sunucularda işlenebilir; ayrıntılar için <a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik</a> sayfasına bakabilirsiniz.</p>
+
+    <h2>4. İzinler</h2>
     <ul>
         <li><strong>Konum (uygulama kullanılırken):</strong> Haritada nerede olduğunuzu göstermek ve parselinize olan mesafe ile yönü hesaplamak için. Konumunuz yalnızca siz bulunduğunuz noktayı sorguladığınızda TKGM'ye gönderilir.</li>
         <li><strong>Kamera:</strong> Yalnızca parsel köşe noktalarını artırılmış gerçeklik (AR) ile göstermek için. Görüntü kaydedilmez ve hiçbir yere gönderilmez.</li>
@@ -63,25 +71,25 @@
     </ul>
     <p>İzinleri istediğiniz zaman iOS Ayarlar &gt; Tapu Sepeti bölümünden değiştirebilirsiniz.</p>
 
-    <h2>4. Reklam, Analiz ve Takip</h2>
-    <p>Uygulama <strong>reklam göstermez</strong>, kullanım istatistiği veya çökme raporu toplamaz ve sizi diğer şirketlere ait uygulama ya da web sitelerinde <strong>takip etmez</strong>.</p>
+    <h2>5. Reklam, Analiz ve Takip</h2>
+    <p>Uygulama <strong>reklam göstermez</strong>, kullanım istatistiği (analiz) toplamaz ve sizi diğer şirketlere ait uygulama ya da web sitelerinde <strong>takip etmez</strong>. Toplanan tek teşhis verisi, 3. bölümde anlatılan çökme raporlarıdır.</p>
 
-    <h2>5. Verilerinizi Silme</h2>
-    <p>Kayıtlı bir tapuyu parsel detayındaki "Tapularımdan çıkar" ile silebilirsiniz. Uygulamayı cihazınızdan kaldırdığınızda, önbellek dahil tüm yerel veriler silinir.</p>
+    <h2>6. Verilerinizi Silme</h2>
+    <p>Kayıtlı bir tapuyu parsel detayındaki "Tapularımdan çıkar" ile silebilirsiniz. Uygulamayı cihazınızdan kaldırdığınızda, önbellek dahil tüm yerel veriler silinir. Çökme raporları 90 gün sonra Firebase'den otomatik olarak silinir.</p>
 
-    <h2>6. Çocukların Gizliliği</h2>
-    <p>Uygulama genel kullanıcılara yöneliktir ve kimseden kişisel veri toplamadığı için çocuklardan da veri toplamaz.</p>
+    <h2>7. Çocukların Gizliliği</h2>
+    <p>Uygulama genel kullanıcılara yöneliktir. Çocuklar dahil hiç kimseden sizi tanımlayan kişisel veri toplamaz; yalnızca 3. bölümde anlatılan teknik çökme ve ayar verileri işlenir.</p>
 
-    <h2>7. Haklarınız (KVKK / GDPR)</h2>
-    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamındaki haklarınız saklıdır. Uygulama geliştiricisi sizinle ilgili kişisel veri tutmadığından, verileriniz üzerindeki tam kontrol sizdedir; sorularınız için aşağıdaki adresten bize ulaşabilirsiniz.</p>
+    <h2>8. Haklarınız (KVKK / GDPR)</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamındaki haklarınız saklıdır. Uygulama geliştiricisi adınız veya iletişim bilgileriniz gibi sizi tanımlayan veriler tutmaz; Firebase'de işlenen teknik veriler 3. bölümde açıklanmıştır. Sorularınız ve talepleriniz için aşağıdaki adresten bize ulaşabilirsiniz.</p>
 
-    <h2>8. Önemli Not</h2>
+    <h2>9. Önemli Not</h2>
     <p>Tapu Sepeti, TKGM'nin herkese açık parsel sorgu verilerini gösterir; TKGM veya herhangi bir kamu kurumuyla bağlantılı değildir. Bilgiler yalnızca bilgilendirme amaçlıdır.</p>
 
-    <h2>9. Değişiklikler</h2>
+    <h2>10. Değişiklikler</h2>
     <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayımlanır.</p>
 
-    <h2>10. İletişim</h2>
+    <h2>11. İletişim</h2>
     <p>Sorularınız için: <a href="mailto:fedartech+tapusepeti@gmail.com">fedartech+tapusepeti@gmail.com</a></p>
 
     <footer><a href="../marketing/tr.html">Tapu Sepeti</a> · <a href="../support/tr.html">Destek</a></footer>
