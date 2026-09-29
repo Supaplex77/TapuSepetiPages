@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Tapu Sepeti</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #1f2933; background: #f6faf8; }
+        .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 28px 24px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+        header img { width: 56px; height: 56px; }
+        header .app { font-weight: 700; color: #108E67; font-size: 20px; }
+        h1 { font-size: 24px; margin: 16px 0 4px; }
+        h2 { font-size: 18px; margin-top: 28px; margin-bottom: 10px; color: #0B6B4E; }
+        p { margin: 0 0 12px; }
+        ul { margin: 10px 0; padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        a { color: #108E67; }
+        .updated { color: #6b7280; font-size: 14px; margin-bottom: 20px; }
+        .lang-switch { font-size: 14px; margin-bottom: 12px; }
+        .lang-switch a { text-decoration: none; }
+        .lang-switch span { color: #d1d5db; margin: 0 8px; }
+        .highlight { background: #e8f6f0; border-left: 4px solid #108E67; padding: 12px 14px; border-radius: 8px; margin: 16px 0; }
+        details { border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
+        summary { cursor: pointer; font-weight: 600; }
+        details p { margin-top: 10px; }
+        .contact { background: #e8f6f0; border-radius: 10px; padding: 14px; margin-top: 24px; }
+        footer { margin-top: 32px; font-size: 13px; color: #6b7280; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch"><a href="tr.html">Türkçe</a><span>|</span><a href="en.html">English</a></div>
+    <header><img src="../logo.png" alt="Tapu Sepeti logo"><span class="app">Tapu Sepeti</span></header>
+    <h1>Support</h1>
+    <p>Tapu Sepeti helps you find your parcels in Türkiye using TKGM's public parcel-query data, see them on a satellite map and keep them in one place. Answers to common questions are below.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <details>
+        <summary>I get "No parcel found for this location".</summary>
+        <p>TKGM has no parcel for the point or block/parcel number you entered. Check that the numbers match your deed and that you picked the right neighbourhood. When querying from the map, tap well inside the parcel, away from its edges. Neighbourhood names may have changed; try the former name too.</p>
+    </details>
+    <details>
+        <summary>I get "Couldn't reach TKGM".</summary>
+        <p>Check your internet connection and try again. TKGM's services are occasionally down for maintenance; please try again a little later. Parcels you looked up before are stored on your device and open without internet.</p>
+    </details>
+    <details>
+        <summary>My deed has no block (ada) number, or it says 0.</summary>
+        <p>Some village parcels have no block number. Enter 0 as the block and search with the parcel number.</p>
+    </details>
+    <details>
+        <summary>The corner points in AR are not exactly in place.</summary>
+        <p>The AR view depends on your phone's GPS and compass accuracy and is approximate; the offset can be anywhere from a few metres to tens of metres. Waiting a few seconds in an open area with a clear view of the sky and moving the phone slowly improves accuracy. For exact boundaries, consult a licensed surveyor.</p>
+    </details>
+    <details>
+        <summary>What do the dates in Satellite History mean?</summary>
+        <p>The images come from the Esri World Imagery Wayback archive. The date shown is the date of the archive release that added the image; the photo itself may have been taken somewhat earlier. The app lists only images that actually changed at your parcel's location, so there may not be an image for every year.</p>
+    </details>
+    <details>
+        <summary>Is the information official? Can I use it for a sale?</summary>
+        <p>No. Tapu Sepeti shows public parcel-query data from TKGM and is not affiliated with TKGM or any government agency. Information is for reference only and cannot be used for official procedures. For official information, use e-Devlet or a land registry office.</p>
+    </details>
+    <details>
+        <summary>Why do the registered area and the computed area differ?</summary>
+        <p>The registered area is the value in the TKGM record. The computed area is the app's approximate calculation from the boundary coordinates; small differences due to measurement and rounding are normal.</p>
+    </details>
+    <details>
+        <summary>The app shows something different from the TKGM Parcel Query website.</summary>
+        <p>To avoid querying TKGM again and again, the app keeps what it fetched on your device: province, district and neighbourhood lists for 30 days, and parcels you looked up until you clear them. If a new neighbourhood was added in your area or your parcel was subdivided or merged, use "Refresh" on a saved deed's detail screen, or Settings &gt; "Clear TKGM cache" for everything else. After clearing, the data is fetched from TKGM again; many queries in a short time can hit TKGM's rate limit, so only do this when you actually see a difference.</p>
+    </details>
+    <details>
+        <summary>How do I delete my data?</summary>
+        <p>You can delete a saved deed from its parcel detail screen. Deleting the app from your device removes all data, including the cache. The app needs no account and keeps no data about you on any server.</p>
+    </details>
+
+    <div class="contact">
+        <p><strong>Contact us:</strong> <a href="mailto:fedartech+tapusepeti@gmail.com">fedartech+tapusepeti@gmail.com</a></p>
+        <p>Please include your iPhone model, iOS version and a short description of the problem (with the province/district/block/parcel if relevant).</p>
+    </div>
+
+    <footer><a href="../marketing/en.html">Tapu Sepeti</a> · <a href="../privacy-policy/en.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>

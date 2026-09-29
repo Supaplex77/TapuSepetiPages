@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapu Sepeti - Tüm Tapuların Tek Sepette</title>
+    <meta name="description" content="Türkiye'deki parselini TKGM parsel sorgusuyla bul, uydu haritasında sınırlarını gör, arazinin yıllar içindeki değişimini uydu arşivinden incele.">
+    <link rel="icon" href="../logo.png">
+    <style>
+        :root {
+            --accent: #108E67;
+            --accent-dark: #0B6B4E;
+            --accent-soft: #e8f6f0;
+            --text: #1f2933;
+            --text-muted: #5f6b76;
+            --bg: #ffffff;
+            --bg-alt: #f6faf8;
+            --border: #e3ebe7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+        header { text-align: center; padding: 48px 0 24px; }
+        header img { width: 96px; height: 96px; }
+        .logo { font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-top: 8px; }
+        .tagline { font-size: 1.25rem; color: var(--text-muted); }
+        .lang-switch { margin-top: 16px; font-size: 0.9rem; }
+        .lang-switch a { color: var(--text-muted); text-decoration: none; }
+        .lang-switch a:hover { color: var(--accent); }
+        .lang-switch span { color: #cbd5d1; margin: 0 8px; }
+        .hero { text-align: center; padding: 24px 0 40px; }
+        .hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; text-wrap: balance; }
+        .hero p { font-size: 1.125rem; color: var(--text-muted); margin-bottom: 28px; }
+        .cta {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff !important;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        a.cta:hover { background: var(--accent-dark); }
+        .cta.soon { background: var(--accent-soft); color: var(--accent-dark) !important; }
+        .shots {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding: 4px 24px 16px;
+            margin: 0 -24px;
+            scroll-snap-type: x mandatory;
+        }
+        .shots img {
+            flex: 0 0 auto;
+            width: 180px;
+            height: auto;
+            border-radius: 14px;
+            scroll-snap-align: center;
+        }
+        section { padding: 40px 0; border-top: 1px solid var(--border); }
+        section h2 { font-size: 1.5rem; margin-bottom: 20px; }
+        section h3 { font-size: 1.05rem; color: var(--accent-dark); margin: 24px 0 4px; }
+        section h3:first-of-type { margin-top: 0; }
+        .features { list-style: none; }
+        .features li { padding: 6px 0 6px 28px; position: relative; }
+        .features li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+        .app-tabs { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+        .tab-card { background: var(--bg-alt); padding: 18px; border-radius: 12px; border-left: 4px solid var(--accent); }
+        .tab-card h4 { font-size: 1.05rem; margin-bottom: 4px; }
+        .tab-card p { font-size: 0.9rem; color: var(--text-muted); }
+        .notice { background: var(--bg-alt); border-radius: 12px; padding: 16px 18px; font-size: 0.9rem; color: var(--text-muted); }
+        footer { text-align: center; padding: 40px 0 32px; font-size: 0.875rem; color: var(--text-muted); }
+        footer a { color: var(--accent); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../logo.png" alt="">
+            <div class="logo">Tapu Sepeti</div>
+            <div class="tagline">Tüm tapuların tek sepette</div>
+            <div class="lang-switch">
+                <a href="tr.html">Türkçe</a><span>|</span>
+                <a href="en.html">English</a>
+            </div>
+        </header>
+        <div class="hero">
+            <h1>Parselini bul, haritada gör, sepetine ekle.</h1>
+            <p>Türkiye'deki parselini TKGM'nin herkese açık parsel sorgu verileriyle bul, uydu haritasında sınırlarını gör ve arazinde yıllar içinde nelerin değiştiğini uydu arşivinden incele.</p>
+            <!-- App Store'a çıkınca: <a href="https://apps.apple.com/app/id<APP-ID>" class="cta" target="_blank" rel="noopener">…</a> -->
+            <span class="cta soon">Yakında App Store'da</span>
+        </div>
+        <div class="shots">
+            <img src="../app-page/screenshots/tr/iphone/01.png" alt="Tapu Sepeti ekran görüntüsü 1" loading="lazy">
+            <img src="../app-page/screenshots/tr/iphone/02.png" alt="Tapu Sepeti ekran görüntüsü 2" loading="lazy">
+            <img src="../app-page/screenshots/tr/iphone/03.png" alt="Tapu Sepeti ekran görüntüsü 3" loading="lazy">
+            <img src="../app-page/screenshots/tr/iphone/04.png" alt="Tapu Sepeti ekran görüntüsü 4" loading="lazy">
+            <img src="../app-page/screenshots/tr/iphone/05.png" alt="Tapu Sepeti ekran görüntüsü 5" loading="lazy">
+            <img src="../app-page/screenshots/tr/iphone/06.png" alt="Tapu Sepeti ekran görüntüsü 6" loading="lazy">
+        </div>
+        <section>
+            <h2>Neden Tapu Sepeti?</h2>
+            <h3>Parselini kolayca bul</h3>
+            <ul class="features">
+                <li>İl, ilçe ve mahalle seç, ada/parsel numarasıyla sorgula</li>
+                <li>Adres yazarak en yakın parseli bul</li>
+                <li>Enlem/boylam koordinatıyla ya da haritada bir noktaya dokunarak sorgula</li>
+                <li>Arazideysen "Bulunduğum yerdeki parsel" ile tek dokunuşla sorgula</li>
+            </ul>
+            <h3>Tüm tapuların tek yerde</h3>
+            <ul class="features">
+                <li>Parselleri kaydet, "Köydeki tarla" gibi isimler ver, notlar ekle</li>
+                <li>Tapularını listede ve haritada birlikte gör; toplam alan özeti</li>
+                <li>Hepsini tek KML/GeoJSON dosyasında dışa aktar</li>
+                <li>Sorguladığın parseller cihazında saklanır, internet olmadan da açılır</li>
+            </ul>
+            <h3>Uydu geçmişi</h3>
+            <ul class="features">
+                <li>Farklı tarihli uydu görüntülerini tara, arazinin yıllar içindeki değişimini gör</li>
+                <li>Parsel sınırı her görüntünün üzerinde çizili</li>
+                <li>Kayıtlı tapularının yerinde yeni uydu görüntüsü yayımlanınca haber ver</li>
+            </ul>
+            <h3>Arazide yönünü bul</h3>
+            <ul class="features">
+                <li>Uydu haritasında sınır ve numaralı köşe noktaları</li>
+                <li>Pusula ile merkeze ve köşelere yön ve mesafe</li>
+                <li>Konum hassasiyeti yüksek telefonlarda köşe noktalarını AR ile yaklaşık olarak gör</li>
+                <li>3D görünüm ve Apple Haritalar ile yol tarifi</li>
+            </ul>
+            <h3>Gizlilik öncelikli</h3>
+            <ul class="features">
+                <li>Hesap gerekmez, reklam yok, takip yok</li>
+                <li>Kayıtlı tapuların yalnızca cihazında saklanır</li>
+                <li>Türkçe ve İngilizce</li>
+            </ul>
+        </section>
+        <section>
+            <h2>4 Sekme, Tek Sepet</h2>
+            <div class="app-tabs">
+                <div class="tab-card">
+                    <h4>Özet</h4>
+                    <p>Tapu sayısı, toplam alan, yeni uydu görüntüleri ve son eklenenler</p>
+                </div>
+                <div class="tab-card">
+                    <h4>Tapularım</h4>
+                    <p>Kayıtlı tapuların; isme, alana veya tarihe göre sıralama</p>
+                </div>
+                <div class="tab-card">
+                    <h4>Harita</h4>
+                    <p>Tüm tapuların uydu haritasında; dokunarak yeni parsel sorgula</p>
+                </div>
+                <div class="tab-card">
+                    <h4>Ayarlar</h4>
+                    <p>Dil, dışa aktarma, önbellek, gizlilik ve destek</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Önemli bilgilendirme</h2>
+            <p class="notice">Tapu Sepeti, Tapu ve Kadastro Genel Müdürlüğü'nün (TKGM) herkese açık parsel sorgu verilerini gösterir; TKGM veya herhangi bir kamu kurumuyla bağlantılı değildir. Bilgiler yalnızca bilgilendirme amaçlıdır, resmî işlemlerde kullanılamaz. Konum, pusula ve AR gösterimleri yaklaşıktır. Uydu geçmişi görüntüleri Esri World Imagery Wayback'ten alınır (Esri, Maxar, Earthstar Geographics).</p>
+        </section>
+        <footer>
+            <p>
+                <a href="../privacy-policy/tr.html">Gizlilik Politikası</a> &middot;
+                <a href="../support/tr.html">Destek</a> &middot;
+                <a href="../app-page/index.html">Uygulama Sayfası</a>
+            </p>
+            <p style="margin-top: 12px;">iPhone ve iPad için · iOS 13 ve üzeri</p>
+            <p>© 2026 Bilal Enes Fedar</p>
+        </footer>
+    </div>
+</body>
+</html>

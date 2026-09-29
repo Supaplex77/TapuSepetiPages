@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek - Tapu Sepeti</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #1f2933; background: #f6faf8; }
+        .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 28px 24px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+        header img { width: 56px; height: 56px; }
+        header .app { font-weight: 700; color: #108E67; font-size: 20px; }
+        h1 { font-size: 24px; margin: 16px 0 4px; }
+        h2 { font-size: 18px; margin-top: 28px; margin-bottom: 10px; color: #0B6B4E; }
+        p { margin: 0 0 12px; }
+        ul { margin: 10px 0; padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        a { color: #108E67; }
+        .updated { color: #6b7280; font-size: 14px; margin-bottom: 20px; }
+        .lang-switch { font-size: 14px; margin-bottom: 12px; }
+        .lang-switch a { text-decoration: none; }
+        .lang-switch span { color: #d1d5db; margin: 0 8px; }
+        .highlight { background: #e8f6f0; border-left: 4px solid #108E67; padding: 12px 14px; border-radius: 8px; margin: 16px 0; }
+        details { border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
+        summary { cursor: pointer; font-weight: 600; }
+        details p { margin-top: 10px; }
+        .contact { background: #e8f6f0; border-radius: 10px; padding: 14px; margin-top: 24px; }
+        footer { margin-top: 32px; font-size: 13px; color: #6b7280; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch"><a href="tr.html">Türkçe</a><span>|</span><a href="en.html">English</a></div>
+    <header><img src="../logo.png" alt="Tapu Sepeti logosu"><span class="app">Tapu Sepeti</span></header>
+    <h1>Destek</h1>
+    <p>Tapu Sepeti, Türkiye'deki parsellerinizi TKGM'nin herkese açık parsel sorgu verileriyle bulmanızı, uydu haritasında görmenizi ve tek yerde saklamanızı sağlar. Aşağıda sık sorulan soruların yanıtlarını bulabilirsiniz.</p>
+
+    <h2>Sık Sorulan Sorular</h2>
+    <details>
+        <summary>"Bu konum için parsel bulunamadı" uyarısı alıyorum.</summary>
+        <p>Girdiğiniz nokta veya ada/parsel numarası için TKGM'de kayıtlı bir parsel yoktur. Numaraları tapunuzdaki gibi girdiğinizden ve doğru mahalleyi seçtiğinizden emin olun. Haritadan sorguluyorsanız parselin içine, sınırlara uzak bir noktaya dokunun. Mahalle adları değişmiş olabilir; eski mahalle adıyla da deneyin.</p>
+    </details>
+    <details>
+        <summary>"TKGM'ye ulaşılamadı" uyarısı alıyorum.</summary>
+        <p>İnternet bağlantınızı kontrol edip tekrar deneyin. TKGM hizmetleri zaman zaman bakım nedeniyle yanıt vermeyebilir; bir süre sonra yeniden deneyebilirsiniz. Daha önce sorguladığınız parseller cihazınızda saklandığı için internet olmadan da açılır.</p>
+    </details>
+    <details>
+        <summary>Tapumda ada numarası yok ya da 0 yazıyor.</summary>
+        <p>Bazı köy parsellerinde ada numarası bulunmaz; bu durumda ada alanına 0 yazıp parsel numarasıyla sorgulayabilirsiniz.</p>
+    </details>
+    <details>
+        <summary>AR'da köşe noktaları tam yerinde görünmüyor.</summary>
+        <p>AR gösterimi telefonunuzun GPS ve pusula doğruluğuna bağlıdır ve yaklaşıktır; sapma birkaç metreden onlarca metreye kadar çıkabilir. Açık alanda, gökyüzünü gören bir noktada birkaç saniye bekleyip telefonu yavaşça hareket ettirmek doğruluğu artırır. Kesin sınır tespiti için lisanslı bir harita mühendisine başvurun.</p>
+    </details>
+    <details>
+        <summary>Uydu geçmişindeki tarihler neyi gösteriyor?</summary>
+        <p>Görüntüler Esri World Imagery Wayback arşivinden gelir. Gösterilen tarih, görüntünün arşive eklendiği sürümün tarihidir; fotoğrafın çekildiği gün bundan biraz önce olabilir. Uygulama yalnızca parselinizin bulunduğu yerde gerçekten değişen görüntüleri listeler, bu yüzden her yıl için görüntü bulunmayabilir.</p>
+    </details>
+    <details>
+        <summary>Bilgiler resmî mi? Alım-satımda kullanabilir miyim?</summary>
+        <p>Hayır. Tapu Sepeti, TKGM'nin herkese açık parsel sorgu verilerini gösterir; TKGM veya herhangi bir kamu kurumuyla bağlantılı değildir. Bilgiler yalnızca bilgilendirme amaçlıdır ve resmî işlemlerde kullanılamaz. Resmî bilgi için e-Devlet ve tapu müdürlüklerine başvurun.</p>
+    </details>
+    <details>
+        <summary>Tapu alanı ile hesaplanan alan neden farklı?</summary>
+        <p>Tapu alanı TKGM kaydındaki değerdir. Hesaplanan alan, sınır koordinatlarından uygulamanın hesapladığı yaklaşık değerdir; ölçüm ve yuvarlama farkları nedeniyle küçük farklar normaldir.</p>
+    </details>
+    <details>
+        <summary>Uygulamadaki bilgi TKGM Parsel Sorgu sitesindekinden farklı.</summary>
+        <p>Uygulama, TKGM'den çektiği bilgileri tekrar tekrar sorgu yapmamak için cihazınızda saklar: il, ilçe, mahalle listeleri 30 gün, sorguladığınız parseller siz temizleyene kadar tutulur. Bölgenize yeni bir mahalle eklendiyse ya da parselinizde ifraz/tevhit yapıldıysa, kayıtlı bir tapu için detayındaki "Güncelle"yi, diğerleri için Ayarlar &gt; "TKGM önbelleğini temizle"yi kullanın. Temizledikten sonra bilgiler TKGM'den yeniden çekilir; kısa sürede üst üste çok sorgu yapmak TKGM'nin sorgu sınırına takılmanıza yol açabilir, bu yüzden bunu yalnızca gerçekten bir fark gördüğünüzde yapın.</p>
+    </details>
+    <details>
+        <summary>Verilerimi nasıl silerim?</summary>
+        <p>Kayıtlı bir tapuyu parsel detayındaki "Tapularımdan çıkar" ile silebilirsiniz. Uygulamayı cihazınızdan kaldırdığınızda önbellek dahil tüm veriler silinir. Uygulama hesap istemez ve sizinle ilgili hiçbir veriyi sunucuda tutmaz.</p>
+    </details>
+
+    <div class="contact">
+        <p><strong>Bize ulaşın:</strong> <a href="mailto:fedartech+tapusepeti@gmail.com">fedartech+tapusepeti@gmail.com</a></p>
+        <p>Lütfen iPhone modelinizi, iOS sürümünüzü ve sorunu (varsa il/ilçe/ada/parsel bilgisiyle) kısaca yazın.</p>
+    </div>
+
+    <footer><a href="../marketing/tr.html">Tapu Sepeti</a> · <a href="../privacy-policy/tr.html">Gizlilik Politikası</a></footer>
+</div>
+</body>
+</html>
