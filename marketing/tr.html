@@ -47,6 +47,7 @@
             transition: background 0.2s;
         }
         a.cta:hover { background: var(--accent-dark); }
+        .ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
         .shots {
             display: flex;
             gap: 12px;
@@ -93,7 +94,10 @@
         <div class="hero">
             <h1>Parselini bul, haritada gör, sepetine ekle.</h1>
             <p>Türkiye'deki parselini TKGM'nin herkese açık parsel sorgu verileriyle bul, uydu haritasında sınırlarını gör ve arazinde yıllar içinde nelerin değiştiğini uydu arşivinden incele.</p>
-            <a href="https://apps.apple.com/tr/app/tapu-sepeti/id6817307500" class="cta" target="_blank" rel="noopener">App Store'dan İndir</a>
+            <div class="ctas">
+                <a href="https://apps.apple.com/tr/app/tapu-sepeti/id6817307500" class="cta" target="_blank" rel="noopener">App Store'dan İndir</a>
+                <a href="https://play.google.com/store/apps/details?id=com.fedartech.tapusepeti" class="cta" target="_blank" rel="noopener">Google Play'den İndir</a>
+            </div>
         </div>
         <div class="shots">
             <img src="../app-page/screenshots/tr/iphone/01.png" alt="Tapu Sepeti ekran görüntüsü 1" loading="lazy">
@@ -130,7 +134,7 @@
                 <li>Uydu haritasında sınır ve numaralı köşe noktaları</li>
                 <li>Pusula ile merkeze ve köşelere yön ve mesafe</li>
                 <li>Konum hassasiyeti yüksek telefonlarda köşe noktalarını AR ile yaklaşık olarak gör</li>
-                <li>3D görünüm ve Apple Haritalar ile yol tarifi</li>
+                <li>3D görünüm ve harita uygulamanla yol tarifi</li>
             </ul>
             <h3>Gizlilik öncelikli</h3>
             <ul class="features">
