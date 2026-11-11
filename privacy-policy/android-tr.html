@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Gizlilik Politikası - Tapu Sepeti</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #1f2933; background: #f6faf8; }
+        .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 28px 24px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+        header img { width: 56px; height: 56px; }
+        header .app { font-weight: 700; color: #108E67; font-size: 20px; }
+        h1 { font-size: 24px; margin: 16px 0 4px; }
+        h2 { font-size: 18px; margin-top: 28px; margin-bottom: 10px; color: #0B6B4E; }
+        p { margin: 0 0 12px; }
+        ul { margin: 10px 0; padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        a { color: #108E67; }
+        .updated { color: #6b7280; font-size: 14px; margin-bottom: 20px; }
+        .lang-switch { font-size: 14px; margin-bottom: 12px; }
+        .lang-switch a { text-decoration: none; }
+        .lang-switch span { color: #d1d5db; margin: 0 8px; }
+        .highlight { background: #e8f6f0; border-left: 4px solid #108E67; padding: 12px 14px; border-radius: 8px; margin: 16px 0; }
+        footer { margin-top: 32px; font-size: 13px; color: #6b7280; }
+        @media (prefers-color-scheme: dark) {
+            body { color: #e5e7eb; background: #0d1512; }
+            .container { background: #18211d; box-shadow: none; }
+            header .app, a { color: #3BC292; }
+            h2 { color: #5fd3a8; }
+            .updated, footer { color: #9ca3af; }
+            .lang-switch span { color: #4b5563; }
+            .highlight { background: #123328; border-left-color: #3BC292; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch"><a href="android-tr.html">Türkçe</a><span>|</span><a href="android-en.html">English</a></div>
+    <header><img src="../logo.png" alt="Tapu Sepeti logosu"><span class="app">Tapu Sepeti</span></header>
+
+    <h1>Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: 11 Kasım 2026</p>
+
+    <p>Tapu Sepeti ("Uygulama") olarak gizliliğinize önem veriyoruz. Bu politika, Uygulamayı kullandığınızda hangi bilgilerin nerede işlendiğini açıkça anlatır.</p>
+
+    <div class="highlight">
+        <p><strong>Kısaca:</strong> Uygulama hesap istemez; adınız, e-postanız veya konumunuz gibi <strong>sizi tanımlayan bilgiler toplanmaz</strong>. Kayıtlı tapularınız yalnızca cihazınızda saklanır. Hataları düzeltebilmek için yalnızca <strong>çökme raporları</strong> ve uygulama ayarları için Google Firebase kullanılır. Reklam, kullanım analizi veya takip aracı yoktur.</p>
+    </div>
+
+    <h2>1. Cihazınızda Saklanan Veriler</h2>
+    <p>Aşağıdaki bilgiler <strong>yalnızca cihazınızda</strong> (Android'de uygulamaya ayrılmış özel depolamada) tutulur ve bize gönderilmez:</p>
+    <ul>
+        <li>Kaydettiğiniz tapular (parsel bilgileri, sınır koordinatları) ve onlara verdiğiniz isimler ve notlar</li>
+        <li>Daha önce sorguladığınız parsellerin ve il, ilçe, mahalle listelerinin önbelleği (tekrar açıldığında yeniden sorgu gerekmemesi için)</li>
+        <li>Uydu geçmişi taramalarının sonuçları ve dil tercihiniz</li>
+    </ul>
+    <p>Android'in cihaz yedeklemesi açıksa, Uygulamanın verileri kendi Google yedeğinize dahil edilebilir; bu Android'in varsayılan çalışma şeklidir ve geliştirici bu yedeği hiçbir zaman almaz.</p>
+
+    <h2>2. Uygulamanın Gönderdiği İstekler</h2>
+    <p>Uygulama, istediğiniz bilgiyi getirebilmek için yalnızca şu istekleri yapar. Bu istekler bize değil, doğrudan ilgili hizmete gider ve sizi tanımlayan bir bilgi (isim, hesap, cihaz kimliği) içermez:</p>
+    <ul>
+        <li><strong>TKGM (Tapu ve Kadastro Genel Müdürlüğü):</strong> Parsel sorgusunda seçtiğiniz nokta (enlem/boylam) ya da il/ilçe/mahalle ve ada/parsel numarası, TKGM'nin herkese açık parsel sorgu hizmetine gönderilir.</li>
+        <li><strong>Esri World Imagery ve Wayback:</strong> Tapu kartlarındaki ve parsel detayındaki uydu görselleri, 3D görünümün zemini ve uydu geçmişi ekranı için, parselin bulunduğu yerin harita karoları Esri'nin herkese açık görüntü hizmetlerinden istenir.</li>
+        <li><strong>Google (Maps SDK for Android):</strong> Harita ve uydu görüntüleri Android için Google Maps SDK'sı ile gösterilir; adresle aramada yazdığınız adres Android'in yerleşik adres arama (geocoder) hizmetiyle işlenir (çoğu cihazda Google tarafından sağlanır); yol tarifi harita uygulamanızı (ör. Google Haritalar) açar. Bu işlemler <a href="https://policies.google.com/privacy">Google'ın gizlilik politikasına</a> tabidir.</li>
+    </ul>
+    <p>Bu hizmetler kendi gizlilik politikalarına tabidir. Uygulamanın geliştiricisi bu istekleri görmez ve kendi sunucusunda hiçbir veri saklamaz.</p>
+
+    <h2>3. Çökme Raporları ve Uygulama Ayarları (Google Firebase)</h2>
+    <p>Uygulama, Google'ın Firebase hizmetlerinden yalnızca şu ikisini kullanır:</p>
+    <ul>
+        <li><strong>Firebase Crashlytics:</strong> Uygulama çökerse, hatayı bulup düzeltebilmemiz için bir çökme raporu gönderilir. Rapor; hatanın teknik ayrıntılarını, cihaz modelini, Android ve uygulama sürümünü, çökme anındaki cihaz durumunu (ör. boş bellek, ekran yönü) ve rastgele üretilmiş bir kurulum kimliğini içerir. Adınız, konumunuz, kayıtlı tapularınız veya sorguladığınız parseller rapora eklenmez. Çökme raporları Firebase'de 90 gün saklanır.</li>
+        <li><strong>Firebase Remote Config:</strong> Uygulama, açılırken bazı ayarları (örneğin zorunlu güncelleme veya bakım bildirimi) Firebase'den okur. Bu istekte uygulama sürümü, Android sürümü, cihaz dili ve bölgesi ile rastgele üretilmiş bir Firebase kurulum kimliği gönderilir.</li>
+    </ul>
+    <p>Kurulum kimlikleri yalnızca bu uygulama kurulumuna özgüdür ve sizi kişisel olarak tanımlamaz; başka şirketlerin verileriyle birleştirilmez ve reklam için kullanılmaz. Firebase Analytics kullanılmaz. Bu veriler Google tarafından yurt dışındaki (ABD dahil) sunucularda işlenebilir; ayrıntılar için <a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik</a> sayfasına bakabilirsiniz.</p>
+
+    <h2>4. İzinler</h2>
+    <ul>
+        <li><strong>Konum (uygulama kullanılırken):</strong> Haritada nerede olduğunuzu göstermek ve parselinize olan mesafe ile yönü hesaplamak için. Konumunuz yalnızca siz bulunduğunuz noktayı sorguladığınızda TKGM'ye gönderilir.</li>
+        <li><strong>Kamera:</strong> Yalnızca parsel köşe noktalarını artırılmış gerçeklik (AR) ile göstermek için. Görüntü kaydedilmez ve hiçbir yere gönderilmez.</li>
+        <li><strong>Hareket sensörleri (Android'de izin gerekmez):</strong> AR görünümünü ve pusulayı telefonunuzun yönüne hizalamak için; cihazınızda işlenir.</li>
+    </ul>
+    <p>İzinleri istediğiniz zaman Android Ayarlar &gt; Uygulamalar &gt; Tapu Sepeti &gt; İzinler bölümünden değiştirebilirsiniz.</p>
+
+    <h2>5. Reklam, Analiz ve Takip</h2>
+    <p>Uygulama <strong>reklam göstermez</strong>, kullanım istatistiği (analiz) toplamaz ve sizi diğer şirketlere ait uygulama ya da web sitelerinde <strong>takip etmez</strong>. Toplanan tek teşhis verisi, 3. bölümde anlatılan çökme raporlarıdır.</p>
+
+    <h2>6. Verilerinizi Silme</h2>
+    <p>Kayıtlı bir tapuyu parsel detayındaki "Tapularımdan çıkar" ile silebilirsiniz. Uygulamayı cihazınızdan kaldırdığınızda, önbellek dahil tüm yerel veriler silinir. Önbelleği Uygulamanın Ayarlar bölümünden temizleyebilirsiniz. Çökme raporları 90 gün sonra Firebase'den otomatik olarak silinir.</p>
+
+    <h2>7. Çocukların Gizliliği</h2>
+    <p>Uygulama genel kullanıcılara yöneliktir. Çocuklar dahil hiç kimseden sizi tanımlayan kişisel veri toplamaz; yalnızca 3. bölümde anlatılan teknik çökme ve ayar verileri işlenir.</p>
+
+    <h2>8. Haklarınız (KVKK / GDPR)</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamındaki haklarınız saklıdır. Uygulama geliştiricisi adınız veya iletişim bilgileriniz gibi sizi tanımlayan veriler tutmaz; Firebase'de işlenen teknik veriler 3. bölümde açıklanmıştır. Sorularınız ve talepleriniz için aşağıdaki adresten bize ulaşabilirsiniz.</p>
+
+    <h2>9. Önemli Not</h2>
+    <p>Tapu Sepeti, TKGM'nin herkese açık parsel sorgu verilerini gösterir; TKGM veya herhangi bir kamu kurumuyla bağlantılı değildir. Bilgiler yalnızca bilgilendirme amaçlıdır.</p>
+
+    <h2>10. Değişiklikler</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayımlanır.</p>
+
+    <h2>11. İletişim</h2>
+    <p>Sorularınız için: <a href="mailto:fedartech+tapusepeti@gmail.com">fedartech+tapusepeti@gmail.com</a></p>
+
+    <footer><a href="../marketing/tr.html">Tapu Sepeti</a> · <a href="../support/tr.html">Destek</a></footer>
+</div>
+</body>
+</html>
